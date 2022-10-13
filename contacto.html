@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Empresa de enfermeria domiciliaria Buenos Aires">
+    <meta name="keywords" content="enfermeria, rehabilitacion, cuidados domiciliarios, acompañamiento">
     <link rel="shortcut icon" href="./img/favicon.svg" />
     <!-- CSS only -->
     <link
@@ -19,16 +21,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800&display=swap"
       rel="stylesheet"
     />
-    <title>Cuidar| Enfermeria domiciliaria</title>
+    <title>Contactanos | Cuidar</title>
   </head>
   <!-- iniciobody -->
   <body>
     <!-- inicioheader -->
     <header class="container-fluid">
       <div class="row">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <a href="./index.html" class="col-sm-4 col-md-6"
+          ><img src="./img/logo.svg" alt="logo"
+        /></a>
+        <nav class="navbar navbar-expand-lg col-sm-8 col-md-6">
           <div class="container-fluid">
-            <a href="./index.html"><img src="./img/logo.svg" alt="logo" /></a>
             <button
               class="navbar-toggler"
               type="button"
@@ -43,7 +47,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   aria-current="page"
                   href="./index.html"
                   >Home</a
@@ -53,7 +57,7 @@
                 <a class="nav-link" href="./trabajaconnosotros.html"
                   >Trabaja con nosotros</a
                 >
-                <a class="nav-link" href="./contacto.html">Contacto</a>
+                <a class="nav-link active" href="./contacto.html">Contacto</a>
               </div>
             </div>
           </div>
@@ -61,55 +65,60 @@
       </div>
     </header>
     <!-- finheader -->
-    <section class="contact__us">
-      <h2 class="titulo">Comunicate con nosotros</h2>
+    <section class="contact__us contacto">
       <div class="comunicate__formulario">
         <div class="comunicate__parrafo">
-          <p>Para tener mas informacion a cerca de nuestros servicios</p>
-          <p>Tambien podes llamarnos al (+5411) 6974 7089</p>
+          <h1 class="titulo">Comunicate con nosotros</h1>
+          <p>Completa el formulario para tener mas informacion acerca de nuestros servicios.</p>
+          <p class="contac__text">Tambien podes llamarnos al (+5411) 6974 7089</p>
+          <p><a href="mailto:consultas@cuidarsalud.com.ar" class="contac__text"
+            >consultas@cuidarsalud.com.ar</a> </p>
+            <p>Carlos Pellegrini 620| B1708 DWG| Provincia de Buenos Aires| Argentina</p>
+            <p>RECIBI UN PRESUPUESTO PERSONALIZADO</p>
+        <a href="./cotiza.html">COTIZAR AHORA</a>
         </div>
         <div class="comunicate__formulario__contacto">
-          <form action="" class="form">
+          <form action="" class="form color__contac">
             <div class="form__contacto">
+              <label for="text" class="label__contacto">Nombre</label>
               <input
                 type="text"
                 name="Nombre"
-                class="form__input"
-                placeholder="Nombre "
+                class="form__input color__modif"
               />
             </div>
             <div class="form__contacto">
+              <label for="email" class="label__contacto">Email</label>
               <input
                 type="email"
                 name="Email"
-                class="form__input"
-                placeholder="Email "
+                class="form__input color__modif"
               />
             </div>
             <div class="form__contacto">
+              <label for="tel" class="label__contacto">Telefono</label>
               <input
                 type="tel"
                 name="Telefono"
-                class="form__input"
-                placeholder="Telefono "
+                class="form__input color__modif"
               />
             </div>
             <div class="form__contacto">
+              <label for="text" class="label__contacto">Localidad</label>
               <input
                 type="text"
                 name="Localidad"
-                class="form__input"
-                placeholder="Localidad "
+                class="form__input color__modif"
               />
             </div>
             <div class="form__contacto">
+              <label for="text" class="label__contacto">Mensaje</label>
               <textarea
                 name="message"
                 id=""
                 cols="30"
                 rows="10"
-                class="form__input"
-                placeholder="Mensaje"
+                class="form__input color__modif"
               ></textarea>
             </div>
             <input type="submit" value="Enviar" class="form__submit" />

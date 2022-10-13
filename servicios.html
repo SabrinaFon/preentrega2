@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Empresa de enfermeria domiciliaria Buenos Aires">
+    <meta name="keywords" content="enfermeria, rehabilitacion, cuidados domiciliarios, acompañamiento">
     <link rel="shortcut icon" href="./img/favicon.svg" />
     <!-- CSS only -->
     <link
@@ -19,16 +21,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800&display=swap"
       rel="stylesheet"
     />
-    <title>Cuidar| Enfermeria domiciliaria</title>
+    <title>Nuestros Servicios | Cuidar</title>
   </head>
   <!-- iniciobody -->
   <body>
     <!-- inicioheader -->
     <header class="container-fluid">
       <div class="row">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <a href="./index.html" class="col-sm-4 col-md-6"><img src="./img/logo.svg" alt="logo" /></a>
+        <nav class="navbar navbar-expand-lg col-sm-8 col-md-6">
           <div class="container-fluid">
-            <a href="./index.html"><img src="./img/logo.svg" alt="logo" /></a>
             <button
               class="navbar-toggler"
               type="button"
@@ -43,13 +45,13 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   aria-current="page"
                   href="./index.html"
                   >Home</a
                 >
                 <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                <a class="nav-link" href="./servicios.html">Servicios</a>
+                <a class="nav-link active" href="./servicios.html">Servicios</a>
                 <a class="nav-link" href="./trabajaconnosotros.html"
                   >Trabaja con nosotros</a
                 >
@@ -63,52 +65,28 @@
     <!-- finheader -->
     <!-- iniciomain -->
     <main class="main__servicios">
-      <div class="main__servicios__img">
-        <img src="./img/nuestrosservicios1.jpg" alt="imagen">
-      </div>
-      <div class="main__servicios__">
-        <h1 class="main__servicios__title">
-          Nuestros Servicios
-        </h1>
-        <p class="main__servicios__paragraph">
-          Brindamos un Servicio de enfermería que se adapta a cada necesidad y que integra a: Licenciados en enfermeria, enfermeros profesionales, cuidadores y acompañantes terapeuticos.
-        </p>
-      </div>
+      <section class="nosotros">
+        <div class="nosotros__parrafo">
+          <div class="nosotros__decripcion">
+            <h1><span class="span__nosotros"> Nuestros</span> Servicios</h1>
+            <p>
+              Brindamos un Servicio de enfermería que se adapta a cada necesidad y que integra a: Licenciados en enfermeria, enfermeros profesionales, cuidadores y acompañantes terapeuticos.
+            </p>
+            <p>
+              Nuestros Coordinadores de Enfermería administran un plantel de Enfermeros profesionales y Auxiliares, y son los responsables de planificar y controlar todos los cuidados de enfermería que logren satisfacer las necesidades de nuestros Pacientes en el hogar.
+            </p>
+            <p>
+              <a href="./contacto.html" class="btn__contactanos">CONTACTANOS</a>
+            </p>
+          </div>
+          <img src="./img/nuestrosservicios1.jpg" alt="imagen" class="imagen__our__work" />
+        </div>
+      </section>
     </main>
     <!-- finmain -->
-    <section class="serviciostable">
-      <div>
-        <p>Nuestros Coordinadores de Enfermería administran un plantel de Enfermeros profesionales y Auxiliares, y son los responsables de planificar y controlar todos los cuidados de enfermería que logren satisfacer las necesidades de nuestros Pacientes en el hogar.</p>
-      <p>Nuestros servicios incluyen:</p>
-      <table border="5" cellspacing="0" cellpadding="15">
-        <tr>
-          <td>Cuidado personal</td>
-          <td>Actividades Integrales</td>
-        </tr>
-        <tr>
-          <td>Higiene y Confort</td>
-          <td>Rehabilitacion</td>
-        </tr>
-        <tr>
-          <td>Administracion de medicacion</td>
-          <td>Salidas programadas</td>
-        </tr>
-        <tr>
-          <td>Control de signos vitales</td>
-          <td>Acompañamiento a visitas medicas</td>
-        </tr>
-        <tr>
-          <td>Alimentacion enteral y parenteral</td>
-          <td>Compras domesticas y farmaceuticas</td>
-        </tr>
-        <tr>
-          <td>Ejercicios recreativos</td>
-          <td>Solicitud de turnos medicos</td>
-        </tr>
-      </table>
-      </div>
-    <section>
-      <h2>Preguntas Frecuentes</h2>
+    </section>
+    <section class="container">
+      <h2 class="titulo__servicios">Preguntas Frecuentes</h2>
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
@@ -172,21 +150,6 @@
               </div>  
         </div>
       </div>
-      </div>
-    </section>
-    <section>
-      <div>
-        <p>NO DUDE EN CONSULTAR A nuestros teléfonos o déjenos un mensaje en la web y nos contactaremos</p>
-      </div>
-      <section>
-        <p>RECIBI UN PRESUPUESTO PERSONALIZADO</p>
-        <a href="./cotiza.html">COTIZAR AHORA</a>
-      </section>
-      <div>
-        <p>Tel: +54 11 6974 7029 / 4384 5677 / 5258 6399 / 4383 3835</p>
-      </div>
-      <div>
-        <a href="./contacto.html">CONSULTAR</a>
       </div>
     </section>
   <!-- iniciofooter -->

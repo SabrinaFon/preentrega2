@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Empresa de enfermeria domiciliaria Buenos Aires">
+    <meta name="keywords" content="enfermeria, rehabilitacion, cuidados domiciliarios, acompañamiento">
     <link rel="shortcut icon" href="./img/favicon.svg" />
     <!-- CSS only -->
     <link
@@ -19,16 +21,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800&display=swap"
       rel="stylesheet"
     />
-    <title>Cuidar| Enfermeria domiciliaria</title>
+    <title>Sobre Nosotros | Cuidar</title>
   </head>
   <!-- iniciobody -->
   <body>
     <!-- inicioheader -->
     <header class="container-fluid">
       <div class="row">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <a href="./index.html" class="col-sm-4 col-md-6"
+          ><img src="./img/logo.svg" alt="logo"
+        /></a>
+        <nav class="navbar navbar-expand-lg col-sm-8 col-md-6">
           <div class="container-fluid">
-            <a href="./index.html"><img src="./img/logo.svg" alt="logo" /></a>
             <button
               class="navbar-toggler"
               type="button"
@@ -42,13 +46,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
+                <a class="nav-link" aria-current="page" href="./index.html"
                   >Home</a
                 >
-                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                <a class="nav-link active" href="./nosotros.html">Nosotros</a>
                 <a class="nav-link" href="./servicios.html">Servicios</a>
                 <a class="nav-link" href="./trabajaconnosotros.html"
                   >Trabaja con nosotros</a
@@ -61,48 +62,75 @@
       </div>
     </header>
     <!-- finheader -->
-    <!-- iniciomain -->
-    <main class="main__nosotros">
-      <div class="main__nosotros__img">
-        <img src="./img/imagennostros.jpg" alt="imagen" />
+    <section class="nosotros">
+      <div class="nosotros__parrafo">
+        <div class="nosotros__decripcion">
+          <h2><span class="span__nosotros"> Sobre</span> Nosotros</h2>
+          <p>
+            <span class="span__nosotros"
+              >Somos una empresa integral abocada al cuidado domiciliario de la
+              tercera edad.</span
+            >
+            Nos dedicamos a brindar un servicio profesional y personalizado de
+            asistencia domiciliaria integral, dirigida principalmente a la
+            atención del adulto y personas mayores en la comodidad de su hogar,
+            permitiendoles así un envejecimiento digno rodeado del afecto y
+            contención que le brindan sus seres queridos y su entorno
+          </p>
+          <p>
+            <a href="./contacto.html" class="btn__contactanos">CONTACTANOS</a>
+          </p>
+        </div>
+        <img src="./img/nosotros1.jpg" alt="imagen" class="imagen__our__work" />
       </div>
-      <div class="main__nosotros__">
-        <h1 class="main__nosotros__title">Sobre Nosotros</h1>
-        <p class="main__nosotros__paragraph">
-          Somos una empresa integral abocada al cuidado domiciliario de la
-          tercera edad.
+    </section>
+    <!-- inicio nuestros valores -->
+    <section class="about">
+      <div class="about__text about__text--left">
+        <h4 class="title">Mision</h4>
+        <p class="about__parragraph">
+          Brindar a traves de nuestro equipo de profesionales servicios de alta
+          calidad, basados en el cuidado de las persoas que atraviean un
+          problema de salud, llevando tranquilidad y contencion, tanto al
+          paciente como al grupo familiar.
         </p>
       </div>
-    </main>
-    <!-- finmain -->
-    <!-- inicio nuestros valores -->
-    <section class="nosotrosval">
-      <h4>Nuestros Valores</h4>
-      <h4>Seriedad y Confianza</h4>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nulla
-        debitis velit blanditiis sed atque quis. Nemo amet ipsa cupiditate illum
-        voluptatem voluptatibus fugiat at doloremque ex sed, autem dolorem.
-      </p>
-      <h4>Compromiso</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nostrum ex
-        incidunt repellendus nemo, porro eveniet laboriosam debitis, ratione
-        accusamus dolorum? In obcaecati consequatur ratione atque quasi
-        aspernatur officia cupiditate.
-      </p>
+      <div class="about__text">
+        <h4 class="title">Vision</h4>
+        <p class="about__parragraph">
+          Ser empresa lider en asistencia domiciliaria con el fin de mejorar la
+          calidad de vida de las personas.
+        </p>
+      </div>
+    </section>
+    <section class="about__valores">
+      <h4 class="title__valores">Nuestros Valores</h4>
+      <div class="about__valores__text">
+        <h4 class="title">Compromiso</h4>
+        <p>
+          Nuestro valor fundamental es cumplir con los compromisos asumidos con
+          cada uno de nuestros clientes.
+        </p>
+      </div>
+      <div class="about__valores__text">
+        <h4 class="title">Calidad</h4>
+        <p>
+          Estamos comprometidos en brindar un servicio de excelencia buscando la
+          mejora continua.
+        </p>
+      </div>
+      <div class="about__valores__text">
+        <h4 class="title">Trabajo en equipo</h4>
+        <p>Creemos y valoramos el trabajo en equipo.</p>
+      </div>
     </section>
     <!-- fin nuestro valores -->
-    <!-- inicio footer -->
     <!-- iniciofooter -->
     <footer class="footer">
       <div class="footer__paragraph">
         <p>
           Carlos Pellegrini 620| B1708 DWG| Provincia de Buenos Aires| Argentina
           |
-          <a href="mailto:consultas@cuidarsalud.com.ar" style="color: #ffffff"
-            >consultas@cuidarsalud.com.ar</a
-          >
         </p>
         <p>Tel: +54 11 6974 7089 / 4384 5677 / 5258 6399 / 4383 3835</p>
       </div>
