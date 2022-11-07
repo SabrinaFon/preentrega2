@@ -50,14 +50,25 @@ nav {
   }
   /* testimonios */
   .testimonios {
-    width: 50%;
+    width: 90%;
     margin: auto;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__titulo{
+    font-size: 36px;
+    text-align: center; 
+    width: 40%;
+    padding: 5px;
+    }
   }
   .carrusel {
     color: #fff;
-    padding: 30px;
     background-color: #1d9fe3;
+    padding: 30px;
+    width: 56%;
     &__clientes {
       text-align: right;
     }
@@ -184,7 +195,7 @@ nav {
     padding: 60px 0 30px 15px;
     margin: auto;
     overflow: hidden;
-  }
+    }
   /* dektop */
   @media (min-width: 992px) {
   .our__work__parrafo {
@@ -217,6 +228,10 @@ nav {
   }
   .nosotros__description {
     justify-content: space-between;
+    flex-direction: row;
+  }
+  .testimonios{
+    display: flex;
     flex-direction: row;
   }
 }

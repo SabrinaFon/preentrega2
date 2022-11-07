@@ -1,57 +1,76 @@
 .nosotros {
-    width: 90%;
-    padding: 60px 0;
-    margin: auto;
-    &__parrafo {
+  width: 90%;
+  padding: 60px 0;
+  margin: auto;
+  &__parrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__descripcion {
+    width: 48%;
+    padding: 5px;
+  }
+}
+.imagen__our__work {
+  width: 48%;
+  padding: 5px;
+}
+.about {
+  background-color: #f2f2f2;
+  &__parragraph__principal {
+    color: #1d9fe3;
+  }
+}
+.span__nosotros {
+  color: #1d9fe3;
+}
+.btn__contactanos {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  line-height: 18px;
+  text-align: center;
+  background-color: #1d9fe3;
+  border: 1px solid #1d9fe3;
+  padding: 16px;
+}
+.about {
+  padding: 30px;
+  color: #fff;
+  &__text {
+    align-self: center;
+    width: 60%;
+    margin: 30px auto;
+    padding: 30px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+  &__valores__text {
+    align-self: center;
+    width: 60%;
+    margin: 30px auto;
+    background-color: #839098;
+    color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+}
+.title__valores {
+  text-align: center;
+  font-size: 28px;
+  padding: 30px;
+  color: #1d9fe3;
+}
+  /* dektop */
+  @media (min-width: 992px){
+    .nosotros__parrafo {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      flex-direction: row;
     }
-  }
-  .about {
-    background-color: #f2f2f2;
-    &__parragraph__principal {
-      color: #1d9fe3;
+    .nosotros__description {
+      justify-content: space-between;
+      flex-direction: row;
     }
-  }
-  .span__nosotros {
-    color: #1d9fe3;
-  }
-  .btn__contactanos {
-    display: inline-block;
-    font-size: 16px;
-    color: #fff;
-    line-height: 18px;
-    text-align: center;
-    background-color: #1d9fe3;
-    border: 1px solid #1d9fe3;
-    padding: 16px;
-  }
-  .about {
-    padding: 30px;
-    color: #fff;
-    &__text {
-      align-self: center;
-      width: 60%;
-      margin: 30px auto;
-      padding: 30px;
-      box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-    }
-    &__valores__text {
-      align-self: center;
-      width: 60%;
-      margin: 30px auto;
-      background-color: #839098;
-      color: #fff;
-      padding: 30px;
-      box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-      text-align: center;
-    }
-  }
-  .title__valores {
-    text-align: center;
-    font-size: 28px;
-    padding: 30px;
-    color: #1d9fe3;
   }

@@ -8435,14 +8435,24 @@ nav {
 
 /* testimonios */
 .testimonios {
-  width: 50%;
+  width: 90%;
   margin: auto;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .testimonios__titulo {
+    font-size: 36px;
+    text-align: center;
+    width: 40%;
+    padding: 5px; }
 
 .carrusel {
   color: #fff;
+  background-color: #1d9fe3;
   padding: 30px;
-  background-color: #1d9fe3; }
+  width: 56%; }
   .carrusel__clientes {
     text-align: right; }
   .carrusel__parrafo {
@@ -8584,23 +8594,21 @@ nav {
     flex-direction: row; }
   .nosotros__description {
     justify-content: space-between;
+    flex-direction: row; }
+  .testimonios {
+    display: flex;
     flex-direction: row; } }
 
 .contacto {
   width: 100%;
-  background: #1c92d2;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(241, 252, 254, 0.699), rgba(29, 147, 211, 0.733)), url(../img/imagendefondo.jpg);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  text-align: center; }
 
 .contac__text {
   color: #1d9fe3;
   font-weight: 500; }
+
+.cotiza {
+  font-weight: 700; }
 
 .color__contac {
   background-color: #fff; }
@@ -8614,12 +8622,7 @@ nav {
 
 .cotizar {
   width: 100%;
-  background: #1c92d2;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(241, 252, 254, 0.76), rgba(29, 147, 211, 0.733)), url(../img/cotiza.jpg);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #f2f2f2;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -8633,6 +8636,13 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .nosotros__descripcion {
+    width: 48%;
+    padding: 5px; }
+
+.imagen__our__work {
+  width: 48%;
+  padding: 5px; }
 
 .about {
   background-color: #f2f2f2; }
@@ -8677,6 +8687,15 @@ nav {
   padding: 30px;
   color: #1d9fe3; }
 
+/* dektop */
+@media (min-width: 992px) {
+  .nosotros__parrafo {
+    display: flex;
+    flex-direction: row; }
+  .nosotros__description {
+    justify-content: space-between;
+    flex-direction: row; } }
+
 .servicios__contactanos {
   padding: 30px;
   margin: 30px 0; }
@@ -8692,15 +8711,8 @@ nav {
 
 .trabaja {
   width: 100%;
-  background: #1c92d2;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(241, 252, 254, 0.699), rgba(29, 147, 211, 0.733)), url(../img/trabajaconnosotros.jpg);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-color: #f2f2f2;
+  text-align: center; }
 
 .trabaja__text {
   color: #1d9fe3;
@@ -8712,3 +8724,7 @@ nav {
 .resaltar {
   color: #1d9fe3;
   font-weight: 700; }
+
+.label__adjuntarcv {
+  font-weight: 500;
+  color: #1d9fe3; }
